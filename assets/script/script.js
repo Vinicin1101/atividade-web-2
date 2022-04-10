@@ -6,7 +6,7 @@ checkbox.addEventListener('change', function () {
     if (checkbox.checked) {
         playlist.style.display = 'block';
 
-        playlist.innerHTML = '<iframe src="https://open.spotify.com/embed/playlist/1ymewIu4fenTFyMxgofOV7" width="400" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><div class="spin-dual-ring"></div>';
+        playlist.innerHTML = '<iframe src="https://open.spotify.com/embed/playlist/1ymewIu4fenTFyMxgofOV7" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><div class="spin-dual-ring"></div>';
     } else {
         playlist.style.display = 'none';
         playlist.innerHTML = '';

@@ -1,6 +1,15 @@
 /* Adequar a página para dispositivo com telas inferiores a 600px de largura */
 
 @media screen and (max-width: 600px) {
+    header{
+      height: 50vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    header label.profile_name{
+      margin: 5%;
+    }
     nav.btns ul {
         display: flex;
         flex-direction: row;
@@ -20,5 +29,9 @@
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    
+    section.highlights div.item{
+      width: 80%;
     }
 }

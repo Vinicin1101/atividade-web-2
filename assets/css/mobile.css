@@ -11,27 +11,41 @@
       margin: 5%;
     }
     nav.btns ul {
-        display: flex;
-        flex-direction: row;
+      display: flex;
+      flex-direction: row;
     }
 
     nav.btns ul li {
-        margin: 25px 10px;
-        list-style: none;
+      margin: 25px 10px;
+      list-style: none;
     }
 
     table.gostos {
-        width: 90%;
+      margin-top: 15%;
+      width: 130%;
+      position: relative;
+      right: 15%;
     }
 
     section.highlights {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: center;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     
     section.highlights div.item{
+      padding: 5%;
       width: 80%;
+    }
+    
+    section{
+      margin: 10% auto;
+    }
+    h3{
+      margin-top: 15%;
+    }
+    p{
+      margin: 2% auto;
     }
 }

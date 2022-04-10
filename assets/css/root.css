@@ -143,16 +143,16 @@ div.playlist{
 }
 
 .spin-dual-ring {
-    width: 40px;
-    height: 40px;
+    width: 0px;
+    height: 0px;
 
     position: relative;
-    left: calc(-50% + 20px);
-    top: -20px;
+    top: -70px;
+    right: calc(-50% + 10px);
 
-    display: inline-block;
+    display: block;
     
-    z-index: -1;
+    z-index: -10;
 }
 .spin-dual-ring:after {
     width: 20px;
@@ -161,7 +161,7 @@ div.playlist{
     content: "";
     display: block;
     
-    margin: 8px;
+    margin: 0 auto;
     
     border-radius: 50%;
     border: 3px solid rgb(0, 0, 0);
@@ -182,5 +182,5 @@ div.playlist-content{
     transition: all 5s .2s;
 }
 div.playlist-content iframe{
-    z-index: 2;
+    z-index: 0;
 }

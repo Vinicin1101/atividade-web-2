@@ -13,7 +13,9 @@ checkbox.addEventListener('change', function () {
     }
 
     // removendo o spin e descendo a página
-    document.querySelector('spin-dual-ring').remove();
+    setTimeout((arg) => {
+      document.querySelector('.spin-dual-ring').remove();
+    }, 5000)
     window.scrollTo(0, document.body.scrollHeight);
 
 });

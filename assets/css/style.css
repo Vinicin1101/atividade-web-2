@@ -34,7 +34,6 @@ header section.profile {
 
 header img.profile_pic {
     width: 90px;
-
     border: 1px solid rgb(0, 0, 0);
     border-radius: 50%;
 
@@ -42,6 +41,7 @@ header img.profile_pic {
 }
 
 header label.profile_name {
+    margin: 3%;
     font-size: 18pt;
     font-weight: 200;
 }

@@ -1,0 +1,24 @@
+/* Adequar a página para dispositivo com telas inferiores a 600px de largura */
+
+@media screen and (max-width: 600px) {
+    nav.btns ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav.btns ul li {
+        margin: 25px 10px;
+        list-style: none;
+    }
+
+    table.gostos {
+        width: 90%;
+    }
+
+    section.highlights {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

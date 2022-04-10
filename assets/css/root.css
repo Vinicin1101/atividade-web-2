@@ -1,0 +1,180 @@
+html{
+    scroll-behavior: smooth;
+}
+.flex{
+    width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+article{
+    padding: 3%;
+    margin: 5% 0;
+    width: 100%;
+}
+
+.item img{
+    width: 100%;
+}
+
+a.btn-primary{
+    padding: 10px 20px;
+    
+    text-decoration: none;
+    text-align: center;
+
+    color: #fff;
+    background-color: #000;
+    border: 1px solid #fff;
+
+    transition: all 0.5s 125ms;
+}
+
+a.btn-secondary{
+    padding: 10px;
+    
+    text-decoration: none;
+    text-align: center;
+
+    color: #000;
+    background-color: #fff;
+
+    transition: all 0.5s;
+}
+
+a.btn-primary:hover{
+    background-color: #fff;
+    color: #000;
+
+    border: 1px solid #000;
+}
+
+a.btn-secondary:hover{
+    background-color: #000;
+    color: #fff;
+
+    border: 1px solid #fff;
+}
+
+::selection{
+    background-color: rgba(239, 88, 204, 0.638);
+    color: rgb(0, 0, 0);
+}
+::-moz-selection{
+    background-color: rgba(239, 88, 204, 0.638);
+    color: rgb(0, 0, 0);
+}
+
+::-webkit-scrollbar{
+    background-color: #aaa;
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(59, 59, 59);
+}
+
+moz-scrollbar{
+    background-color: #aaa;
+    width: 10px;
+}
+moz-scrollbar-thumb{
+    background-color: rgb(59, 59, 59);
+}
+
+div.playlist{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.checkbox {
+    display: none;
+	opacity: 0;
+}
+.checkbox:hover {
+	opacity: 0;
+}
+
+.label {
+	background-color: rgba(0, 0, 0, 1);
+	border-radius: 50px;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px;
+	position: relative;
+	height: 20px;
+	width: 50px;
+	transform: scale(1.2);
+    margin: 15px 0px;
+}
+
+.label i{
+    color: #fff;
+    font-weight: 100;
+}
+
+.label .ball {
+	background-color: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 4px;
+	left: 5px;
+	height: 22px;
+	width: 22px;
+	transform: translateX(0px);
+	transition: all 0.2s ease-in-out;
+}
+
+.checkbox:checked + .label .ball {
+	transform: translateX(28px);
+}
+
+.spin-dual-ring {
+    width: 40px;
+    height: 40px;
+
+    position: relative;
+    left: calc(-50% + 20px);
+    top: -20px;
+
+    display: inline-block;
+    
+    z-index: -1;
+}
+.spin-dual-ring:after {
+    width: 20px;
+    height: 20px;
+
+    content: "";
+    display: block;
+    
+    margin: 8px;
+    
+    border-radius: 50%;
+    border: 3px solid rgb(0, 0, 0);
+    border-color: rgb(0, 0, 0) transparent rgb(0, 0, 0) transparent;
+    
+    animation: spin .6s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+div.playlist-content{
+    transition: all 0.5s 125ms;
+}
+div.playlist-content iframe{
+    z-index: 2;
+}

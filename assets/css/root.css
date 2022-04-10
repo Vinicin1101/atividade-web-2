@@ -9,10 +9,16 @@ html{
     justify-content: center;
     align-items: center;
 }
-
+li.btn-link{
+    margin: 15px;
+    list-style: none;
+}
+section{
+    margin-top: 5%;
+}
 article{
     padding: 3%;
-    margin: 5% 0;
+    margin: 3% 0;
     width: 100%;
 }
 
@@ -69,19 +75,19 @@ a.btn-secondary:hover{
 }
 
 ::-webkit-scrollbar{
-    background-color: #aaa;
+    filter: invert(1);
     width: 10px;
 }
 ::-webkit-scrollbar-thumb{
-    background-color: rgb(59, 59, 59);
+    background-color: rgba(239, 88, 204, 0.638);
 }
 
 moz-scrollbar{
-    background-color: #aaa;
+    filter: invert(1);
     width: 10px;
 }
 moz-scrollbar-thumb{
-    background-color: rgb(59, 59, 59);
+    background-color: rgba(239, 88, 204, 0.638);
 }
 
 div.playlist{
@@ -173,7 +179,7 @@ div.playlist{
 }
 
 div.playlist-content{
-    transition: all 0.5s 125ms;
+    transition: all 5s .2s;
 }
 div.playlist-content iframe{
     z-index: 2;

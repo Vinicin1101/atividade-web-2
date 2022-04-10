@@ -2,10 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 
-body{
+body {
     margin: 0;
     padding: 0;
-    /* font-family: 'Poppins', sans-serif; */
     font-family: monospace;
     color: #000;
 
@@ -14,60 +13,87 @@ body{
     overflow-x: hidden;
 }
 
-header{
+header,
+footer {
     padding: 50px;
+    height: fit-content;
     margin: 0 auto;
 
-    height: fit-content;
+    text-align: center;
 
     background-color: #000;
     color: #fff;
 }
 
-header section.profile{
+header section.profile {
     display: flex;
 
     flex-direction: column;
     align-items: center;
 }
-header img.profile_pic{
+
+header img.profile_pic {
     width: 90px;
-    
+
     border: 1px solid rgb(0, 0, 0);
     border-radius: 50%;
 
     user-select: none;
 }
 
-header label.profile_name{
+header label.profile_name {
     font-size: 18pt;
     font-weight: 200;
 }
 
-header div.profile_tags{
+header div.profile_tags {
     margin: 1% 0;
 }
 
-nav ul{
+nav ul {
     padding: 0;
 
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+    transition: all 0.5s;
 }
 
-nav ul li{
-    margin: 15px;
-}
-nav.profile_tags ul li{
+nav.profile_tags ul li {
     margin: 5px 10px;
     list-style: "#";
 }
-nav.btns ul li{
-    list-style: none;
+
+table.gostos {
+    width: 50%;
+    margin: 0 auto;
+
+    border: 1px solid #000;
+    border-collapse: collapse;
+    border-spacing: 0;
+
+    transition: all 0.5s;
 }
 
-section.highlights{
+table.gostos tr td {
+    width: 50%;
+
+    padding: 10px;
+
+    border: 1px solid #000;
+    border-bottom: none;
+    border-top: none;
+}
+
+table.gostos thead tr th {
+    padding: 10px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+}
+
+section.highlights {
     width: 100vw;
 
     position: relative;
@@ -80,21 +106,21 @@ section.highlights{
     justify-content: center;
 }
 
-section.highlights div.item{
+section.highlights div.item {
     width: 40%;
     margin: 1%;
     padding: 2%;
 
     display: flex;
     flex-direction: column;
-    
+
     background-color: #000;
     color: #fff;
 
     transition: all 0.5s 125ms;
 }
 
-div.item:hover{
+div.item:hover {
     transform: translateY(-2%);
 
     color: #fff;

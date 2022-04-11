@@ -19,3 +19,13 @@ checkbox.addEventListener('change', function() {
   window.scrollTo(0, document.body.scrollHeight);
 
 });
+
+const img = document.querySelector('.profile_pic');
+
+img.addEventListener("click", (arg) => {
+  if(img.classList.contains("active")){
+    img.classList.remove("active");
+  }else{
+    img.classList.add("active");
+  }
+})

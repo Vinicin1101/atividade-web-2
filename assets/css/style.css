@@ -40,6 +40,22 @@ header img.profile_pic {
   user-select: none;
 }
 
+img.profile_pic.active{
+  transform: scale(2);
+  border-radius: 0;
+}
+
+img.profile_pic.active::before{
+  content: "";
+  position: absolute;
+  z-index: 100;
+  width: 100vw;
+  
+  background-color: #00000075;
+  
+  filter: blur(10px);
+}
+
 header label.profile_name {
   margin: 3%;
   font-size: 18pt;

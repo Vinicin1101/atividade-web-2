@@ -3,126 +3,126 @@
 
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: monospace;
-    color: #000;
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+  color: #000;
 
-    background-color: #fff;
+  background-color: #fff;
 
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 header,
 footer {
-    padding: 50px;
-    height: fit-content;
-    margin: 0 auto;
+  padding: 50px;
+  height: fit-content;
+  margin: 0 auto;
 
-    text-align: center;
+  text-align: center;
 
-    background-color: #000;
-    color: #fff;
+  background-color: #000;
+  color: #fff;
 }
 
 header section.profile {
-    display: flex;
+  display: flex;
 
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 header img.profile_pic {
-    width: 90px;
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 50%;
+  width: 90px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 50%;
 
-    user-select: none;
+  user-select: none;
 }
 
 header label.profile_name {
-    margin: 3%;
-    font-size: 18pt;
-    font-weight: 200;
+  margin: 3%;
+  font-size: 18pt;
+  font-weight: 200;
 }
 
 header div.profile_tags {
-    margin: 1% 0;
+  margin: 1% 0;
 }
 
 nav ul {
-    padding: 0;
+  padding: 0;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 
-    transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 nav.profile_tags ul li {
-    margin: 5px 10px;
-    list-style: "#";
+  margin: 5px 10px;
+  list-style: "#";
 }
 
 table.gostos {
-    width: 50%;
-    margin: 0 auto;
+  width: 50%;
+  margin: 0 auto;
 
-    border: 1px solid #000;
-    border-collapse: collapse;
-    border-spacing: 0;
+  border: 1px solid #000;
+  border-collapse: collapse;
+  border-spacing: 0;
 
-    transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 table.gostos tr td {
-    width: 50%;
+  width: 50%;
 
-    padding: 10px;
+  padding: 10px;
 
-    border: 1px solid #000;
-    border-bottom: none;
-    border-top: none;
+  border: 1px solid #000;
+  border-bottom: none;
+  border-top: none;
 }
 
 table.gostos thead tr th {
-    padding: 10px;
-    text-align: center;
-    background-color: #000;
-    color: #fff;
+  padding: 10px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
 }
 
 section.highlights {
-    width: 100vw;
+  width: 100vw;
 
-    position: relative;
-    right: 15vw;
+  position: relative;
+  right: 15vw;
 
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 section.highlights div.item {
-    width: 40%;
-    margin: 1%;
-    padding: 2%;
+  width: 40%;
+  margin: 1%;
+  padding: 2%;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    background-color: #000;
-    color: #fff;
+  background-color: #000;
+  color: #fff;
 
-    transition: all 0.5s 125ms;
+  transition: all 0.5s 125ms;
 }
 
 div.item:hover {
-    transform: translateY(-2%);
+  transform: translateY(-2%);
 
-    color: #fff;
-    background-color: #000;
+  color: #fff;
+  background-color: #000;
 }

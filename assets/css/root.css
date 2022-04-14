@@ -17,6 +17,10 @@ li.btn-link {
   list-style: none;
 }
 
+div.picture {
+  user-select: none;
+}
+
 div.picture input.close_pic {
   width: 30px;
   height: 30px;
@@ -93,12 +97,12 @@ a.btn-secondary:hover {
 }
 
 ::selection {
-  background-color: rgba(239, 88, 204, 0.638);
+  background-color: rgb(191, 98, 210, 0.6);
   color: rgb(0, 0, 0);
 }
 
 ::-moz-selection {
-  background-color: rgba(239, 88, 204, 0.638);
+  background-color: rgb(191, 98, 210, 0.6);
   color: rgb(0, 0, 0);
 }
 
@@ -108,7 +112,7 @@ a.btn-secondary:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(239, 88, 204, 0.638);
+  background-color: rgba(191, 98, 210, 0.6);
 }
 
 moz-scrollbar {
@@ -117,7 +121,7 @@ moz-scrollbar {
 }
 
 moz-scrollbar-thumb {
-  background-color: rgba(239, 88, 204, 0.638);
+  background-color: rgba(191, 98, 210, 0.6);
 }
 
 div.playlist {

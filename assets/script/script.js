@@ -27,7 +27,7 @@ checkbox.addEventListener('change', function () {
 
 });
 
-const img = document.querySelector('.profile_pic');
+const img = document.querySelector('#profile_pic');
 const btnClose = document.querySelector('.close_pic');
 
 // configurando o popup da imagem de perfil
@@ -37,11 +37,19 @@ function showProfile() {
 
   // condição de ativação do popup
   if (div.classList.contains("active")) {
+    // trocando a resolução da imagem
+    img.setAttribute('src', 'https://www.gravatar.com/avatar/f8e067eb1582177fb3b223a6fddf279f?s=90&r=g&');
+
+    // desativando o popup
     div.classList.remove("active");
 
     // desativando o botao de fechar
     btnClose.style.display = 'none';
   } else {
+    // Trocando a resuolução da imagem
+    img.setAttribute('src', 'https://www.gravatar.com/avatar/f8e067eb1582177fb3b223a6fddf279f?s=512&r=g');
+
+    // ativando o popup
     div.classList.add("active");
 
     // ativando o botao de fechar

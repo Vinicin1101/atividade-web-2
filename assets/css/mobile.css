@@ -1,6 +1,10 @@
 /* Adequar a página para dispositivo com telas inferiores a 600px de largura */
 
 @media screen and (max-width: 600px) {
+  html{
+    font-size: 100%;
+  }
+
   header {
     height: 50vh;
     display: flex;

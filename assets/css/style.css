@@ -34,26 +34,54 @@ header section.profile {
 
 header img.profile_pic {
   width: 90px;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid #fff;
   border-radius: 50%;
 
   user-select: none;
+  z-index: 1000;
+  
+  transition: all 0.25s;
 }
 
-img.profile_pic.active{
+div.picture.active img.profile_pic{
+  position: absolute;
+  right: calc(50% - 45px);
+  top: calc(50% - 90px);
+  
   transform: scale(2);
+  
+  border: none;
   border-radius: 0;
 }
 
-img.profile_pic.active::before{
+div.picture.active::before{
   content: "";
+  
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 100;
+  
   width: 100vw;
+  height: 100vh;
   
-  background-color: #00000075;
+  background-color: #000000BA;
+  backdrop-filter: blur(1px);
+}
+
+div.picture.active::after{
+  content: "";
   
-  filter: blur(10px);
+  display: block;
+  
+  width: 90px;
+  height: 90px;
+  
+  border: 1px solid #fff;
+  border-radius: 50%;
+  
+  background-image : url('/assets/images/blank_profile_pic.png');
+  background-size: 90px;
 }
 
 header label.profile_name {

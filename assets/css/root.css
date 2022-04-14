@@ -17,6 +17,18 @@ li.btn-link {
   list-style: none;
 }
 
+div.picture input.close_pic {
+  width: 30px;
+  height: 30px;
+  display: none;
+
+  background-color: #fff;
+  color: #000;
+
+  border: none;
+  border-radius: 50%;
+}
+
 section {
   margin-top: 5%;
 }
@@ -27,11 +39,11 @@ article {
   width: 100%;
 }
 
-container p{
+container p {
   text-align: justify;
 }
 
-h3{
+h3 {
   display: flex;
   align-items: center;
   gap: 10px;

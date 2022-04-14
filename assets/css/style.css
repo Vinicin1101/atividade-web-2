@@ -33,54 +33,58 @@ header section.profile {
 }
 
 header img.profile_pic {
+  /* cortar a imagem com 90px por 90px */
+  image-rendering: pixelated;
   width: 90px;
+
   border: 1px solid #fff;
   border-radius: 50%;
 
-  user-select: none;
   z-index: 1000;
-  
+
   transition: all 0.25s;
 }
 
-div.picture.active img.profile_pic{
+div.picture.active img.profile_pic {
   position: absolute;
   right: calc(50% - 45px);
-  top: calc(50% - 90px);
-  
-  transform: scale(2);
-  
+  top: calc(50% - 45px);
+
+  transform: scale(3);
+
   border: none;
   border-radius: 0;
 }
 
-div.picture.active::before{
+div.picture.active::before {
   content: "";
-  
+
   position: absolute;
   top: 0;
   left: 0;
   z-index: 100;
-  
+
   width: 100vw;
   height: 100vh;
-  
+
   background-color: #000000BA;
+
+  -webkit-backdrop-filter: blur(1px);
   backdrop-filter: blur(1px);
 }
 
-div.picture.active::after{
+div.picture.active::after {
   content: "";
-  
+
   display: block;
-  
+
   width: 90px;
   height: 90px;
-  
+
   border: 1px solid #fff;
   border-radius: 50%;
-  
-  background-image : url('/assets/images/blank_profile_pic.png');
+
+  background-image: url('/assets/images/blank_profile_pic.png');
   background-size: 90px;
 }
 

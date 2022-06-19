@@ -7,10 +7,6 @@ checkbox.addEventListener('change', function () {
     playlist.style.display = 'block';
     playlist.innerHTML = '<iframe src="https://open.spotify.com/embed/playlist/1ymewIu4fenTFyMxgofOV7" width="100%" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe><div class="spin-dual-ring"></div>';
 
-
-    // block scroll in all elements
-    document.body.style.overflow = 'hidden';
-
   } else {
     playlist.style.display = 'none';
     playlist.innerHTML = '';
@@ -43,6 +39,9 @@ function showProfile() {
     // desativando o popup
     div.classList.remove("active");
 
+    // desbloqueando o scroll
+    document.body.style.overflow = 'auto';
+
     // desativando o botao de fechar
     btnClose.style.display = 'none';
   } else {
@@ -52,6 +51,9 @@ function showProfile() {
     // ativando o popup
     div.classList.add("active");
 
+    // bloqueando o scroll
+    document.body.style.overflow = 'hidden';
+
     // ativando o botao de fechar
     btnClose.style.display = 'block';
     btnClose.style.position = 'absolute';
@@ -60,6 +62,7 @@ function showProfile() {
     btnClose.style.left = `calc(50% + 120px)`;
     btnClose.style.top = `calc(50% - 150px)`;
     btnClose.style.zIndex = '10000';
+
   }
 }
 

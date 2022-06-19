@@ -69,8 +69,8 @@ div.picture.active::before {
 
   background-color: #000000BA;
 
-  -webkit-backdrop-filter: blur(1px);
-  backdrop-filter: blur(1px);
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
 }
 
 div.picture.active::after {
